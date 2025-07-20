@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ivanajdu.github.io/sitemap.xml
