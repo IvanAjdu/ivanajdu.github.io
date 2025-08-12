@@ -11,7 +11,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="/css/styles.css" rel="stylesheet">
 </head>
-<body id="page-top">
+<body id="page-top" class="project-page">
 <!-- Side nav identical to main site -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
   <div class="lang-switch"><a href="/fr/projects/board_selection/" lang="fr" title="Français">🇫🇷</a></div>
@@ -23,45 +23,74 @@
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#screens">Screenshots</a></li>
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tech">Tech</a></li>
-      <li class="nav-item"><a class="nav-link" href="/#portfolio">Back</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#screens">Screenshots</a></li><br>
+      <li class="nav-item"><a class="nav-link" href="/#portfolio">BACK</a></li>
     </ul>
   </div>
 </nav>
 
 <div class="container-fluid p-0">
-  <section class="resume-section" id="overview"><div class="resume-section-content">
-    <h3 class="mb-0">Board Selection</h3>
-    <p class="lead">Visualizations to test and support fairer board members selection. Prototype exploring how data views can test and reduce stereotyping in decision processes.</p>
-  </div></section>
+  <section class="resume-section" id="overview">
+    <div class="resume-section-content">
+      <h2 class="mb-2">Board Selection</h2>
+      <p class="text-muted section-lead">Unity • C# • 3D Visualisation</p>
 
-  <hr class="m-0">
-  <section class="resume-section" id="screens"><div class="resume-section-content">
-    <h4 class="mb-5 text-primary">Screenshots</h4>
-    <div class="row g-3">
-      <!-- Thumbnails: set data-gallery-index sequentially -->
-      <div class="col-6 col-md-4"><img class="img-fluid rounded gallery-thumb" src="/assets/img/projects/board_selection/1.png" alt="Main scene" loading="lazy" width="1200" height="675" data-gallery-index="0"></div>
-      <div class="col-6 col-md-4"><img class="img-fluid rounded gallery-thumb" src="/assets/img/projects/board_selection/2.png" alt="Main scene 2" loading="lazy" width="1200" height="675" data-gallery-index="1"></div>
-      <div class="col-6 col-md-4"><img class="img-fluid rounded gallery-thumb" src="/assets/img/projects/board_selection/3.png" alt="Waving when selected" loading="lazy" width="1200" height="675" data-gallery-index="2"></div>
-      <div class="col-6 col-md-4"><img class="img-fluid rounded gallery-thumb" src="/assets/img/projects/board_selection/4.png" alt="Validating UI" loading="lazy" width="1200" height="675" data-gallery-index="3"></div>
-      <div class="col-6 col-md-4"><img class="img-fluid rounded gallery-thumb" src="/assets/img/projects/board_selection/5.png" alt="Data presentation" loading="lazy" width="1200" height="675" data-gallery-index="4"></div>
-      <!-- add more thumbs as needed -->
+      <div class="row g-4 align-items-start">
+        <div class="col-md-7">
+          <h3 class="h5 mb-2">Overview</h3>
+          <p>AR visualizations to support fairer board members selection. Prototype exploring how spatial data views can reduce stereotyping in decision processes.</p>
+        </div>
+        <div class="col-md-5">
+          <div class="card shadow-sm">
+            <div class="card-body py-3">
+              <h3 class="h6 mb-2">Tech stack</h3>
+              <ul class="mb-0">
+                <li>Unity 2022 LTS</li>
+                <li>AR Foundation / ARCore</li>
+                <li>C#, ScriptableObjects, Addressables</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="h5 screens-heading">Screenshots</h2>
+      <div class="row g-2 gallery-grid" id="screens">
+        <div class="col-6 col-md-4">
+          <img class="img-fluid rounded gallery-thumb"
+               src="/assets/img/projects/Board_Selection/1.png"
+               alt="Screenshot 1" loading="lazy" width="1200" height="675"
+               data-gallery-index="0">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid rounded gallery-thumb"
+               src="/assets/img/projects/Board_Selection/2.png"
+               alt="Screenshot 2" loading="lazy" width="1200" height="675"
+               data-gallery-index="1">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid rounded gallery-thumb"
+               src="/assets/img/projects/Board_Selection/3.png"
+               alt="Screenshot 3" loading="lazy" width="1200" height="675"
+               data-gallery-index="2">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid rounded gallery-thumb"
+               src="/assets/img/projects/Board_Selection/4.png"
+               alt="Screenshot 4" loading="lazy" width="1200" height="675"
+               data-gallery-index="2">
+        </div>
+        <div class="col-6 col-md-4">
+          <img class="img-fluid rounded gallery-thumb"
+               src="/assets/img/projects/Board_Selection/5.png"
+               alt="Screenshot 5" loading="lazy" width="1200" height="675"
+               data-gallery-index="2">
+        </div>
+        <!-- Ajoute d’autres vignettes si besoin -->
+      </div>
     </div>
-  </div></section>
-
-  <hr class="m-0">
-  <section class="resume-section" id="tech"><div class="resume-section-content">
-    <h4 class="mb-5 text-primary">Tech stack</h4>
-    <ul>
-      <li>Unity 2022 LTS</li>
-      <li>C# • ScriptableObjects</li>
-      <li>Animation</li>
-      <li>3D Objects</li>
-
-
-    </ul>
-  </div></section>
+  </section>
 </div>
 
 <!-- Modal + Carousel lightbox -->
