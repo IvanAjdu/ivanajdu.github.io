@@ -10993,7 +10993,7 @@ section.resume-section .resume-section-content {
 .btn-futurist:hover, .btn-futurist:focus {
   background: #00664f;
   color: #00e1ad;
-  box-shadow: 0 0 34px #00664f, 0 0 8px #00664f inset;
+  box-shadow: 0 0 24px #00664f, 0 0 8px #00664f inset;
   transform: translateY(-2px) scale(1.05);
   border-color: #00664f;
   text-shadow: 0 0 8px #222;
@@ -11014,7 +11014,7 @@ section.resume-section .resume-section-content {
     z-index: 1100;
   }
   #sideNav .lang-switch a{
-    font-size: 30px;
+    font-size: 20px;
     padding: 2px 4px;
     background: transparent;
     box-shadow: none;
