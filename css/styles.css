@@ -11048,3 +11048,18 @@ section.resume-section .resume-section-content {
 .project-page .screens-heading{ margin-top:1rem; margin-bottom:.5rem; }
 .project-page .gallery-grid img{ display:block; width:100%; height:auto; }
 
+#sideNav .navbar-nav .nav-sep{ margin-top:.75rem; }
+#sideNav .navbar-nav .nav-sep::before{
+  content:"";
+  display:block;
+  width:50%;
+  height:5px;
+  margin:.25rem auto .5rem; 
+  background:rgba(255,255,255,.35);
+  border-radius:4px;
+}
+
+/* Mobile */
+@media (max-width:991.98px){
+  #sideNav .navbar-nav .nav-sep{ margin-top:.5rem; }
+}

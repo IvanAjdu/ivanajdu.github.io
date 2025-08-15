@@ -12,7 +12,7 @@
 <link href="/css/styles.css" rel="stylesheet">
 </head>
 <body id="page-top" class="project-page">
-<!-- Side nav identical to main site -->
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
   <div class="lang-switch"><a href="/fr/projects/board_selection/" lang="fr" title="Français">🇫🇷</a></div>
   <div class="navbar-brand">
@@ -24,8 +24,8 @@
     <ul class="navbar-nav">
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
       <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tech">Tech</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#screens">Screenshots</a></li><br>
-      <li class="nav-item"><a class="nav-link" href="/#portfolio">BACK</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#screens">Screenshots</a></li>
+      <li class="nav-item nav-sep">  <a class="nav-link" href="/#portfolio">BACK</a></li>
     </ul>
   </div>
 </nav>
@@ -34,25 +34,57 @@
   <section class="resume-section" id="overview">
     <div class="resume-section-content">
       <h2 class="mb-2">Board Selection</h2>
-      <p class="text-muted section-lead">Unity • C# • 3D Visualisation</p>
-
+      <p class="text-muted section-lead">Unity • C# • 3D Visualization</p>
       <div class="row g-4 align-items-start">
-        <div class="col-md-7">
-          <h3 class="h5 mb-2">Overview</h3>
-          <p>AR visualizations to support fairer board members selection. Prototype exploring how spatial data views can reduce stereotyping in decision processes.</p>
+        <div class="col-12 col-lg-8">
+          <br>
+          <h4 class="mb-2">Overview</h4>
+          <p>
+            <strong>Experimental application built to measure the impact of visible attributes on simulated hiring decisions</strong>.
+            It isolates several factors (gender, height, etc) while logging behavioral indicators such as decision time.
+          </p>
+          <p>
+            The participant moves in a minimalist 3D scene.
+            Thirty avatars are spawned, each showing two numeric indicators (e.g., donation, risk, etc) in a floating panel.
+            These <strong> values come from a modifiable spreadsheet</strong> and can be adapted to any protocol.
+          </p>
+          <p>
+            The task is to select 10 profiles. A selected avatar waves and can be deselected before validation.
+            <strong>A counter, control hints, and a final confirm button guide the user</strong>. 
+            Each selection stores the elapsed time since trial start.
+          </p>
+
+          <h4 id="details" class="mt-4 mb-2">Details</h4>
+          <p>
+            The app controls several visual factors : gender (M/W), style (casual/suit),height (small/average/tall), skin color (black/white). 
+            Interaction is simple and reversible with a quota of 10 selections and explicit validation,
+            with clear feedback via waving and world-space panels.
+          </p>
+          <p>
+            <strong>Exported data are Excel-ready</strong>: session DateTime, SelectionTime , Gender, Size,
+            etc, plus Data1 and Data2 coming from a customizable spreadsheet.
+            <strong>Customization</strong> covers the number of avatars, attribute distribution and positions, the two info fields, quotas, stop rules, and UI wording.
+          </p>
         </div>
-        <div class="col-md-5">
-          <div class="card shadow-sm">
+
+        <aside class="col-12 col-lg-4">
+          <div id="tech" class="card shadow-sm">
             <div class="card-body py-3">
               <h3 class="h6 mb-2">Tech stack</h3>
               <ul class="mb-0">
                 <li>Unity 2022 LTS</li>
-                <li>AR Foundation / ARCore</li>
-                <li>C#, ScriptableObjects, Addressables</li>
+                <li>C# </li>
+                <li>Input System (keyboard/mouse)</li>
+                <li>UGUI + TextMeshPro (UI and floating panels)</li>
+                <li>Animator (waving on selection)</li>
+                <li>Raycast targeting</li>
+                <li>Central timer for timestamps</li>
+                <li>Spreadsheet import (CSV/XLSX)</li>
+                <li>CSV UTF-8 export</li>
               </ul>
             </div>
           </div>
-        </div>
+        </aside>
       </div>
 
       <h2 class="h5 screens-heading">Screenshots</h2>
@@ -79,26 +111,23 @@
           <img class="img-fluid rounded gallery-thumb"
                src="/assets/img/projects/board_selection/4.png"
                alt="Screenshot 4" loading="lazy" width="1200" height="675"
-               data-gallery-index="2">
+               data-gallery-index="3">
         </div>
         <div class="col-6 col-md-4">
           <img class="img-fluid rounded gallery-thumb"
                src="/assets/img/projects/board_selection/5.png"
                alt="Screenshot 5" loading="lazy" width="1200" height="675"
-               data-gallery-index="2">
+               data-gallery-index="4">
         </div>
-        <!-- Ajoute d’autres vignettes si besoin -->
       </div>
     </div>
   </section>
 </div>
 
-<!-- Modal + Carousel lightbox -->
 <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content bg-dark">
       <div id="galleryCarousel" class="carousel slide" data-bs-interval="false">
-        <!-- Modal / Carousel -->
         <div class="carousel-inner">
           <div class="carousel-item active"><img src="https://ivanajdu.github.io/assets/img/projects/board_selection/1.png" class="d-block w-100" alt=""></div>
           <div class="carousel-item"><img src="https://ivanajdu.github.io/assets/img/projects/board_selection/2.png" class="d-block w-100" alt=""></div>
