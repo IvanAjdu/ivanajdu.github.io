@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
+
 
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Board Selection — Unity/AR project</title>
-<meta name="description" content="Board Selection project: visualizations supporting board members selection. Summary, tech stack, screenshots.">
-<link rel="canonical" href="https://ivanajdu.github.io/projects/board_selection/">
+<title>Board Selection — projet Unity/AR</title>
+<meta name="description" content="Board Selection : visualisations pour la sélection de membres de conseil. Présentation, pile technique, captures.">
+<link rel="canonical" href="https://ivanajdu.github.io/fr/projects/board_selection/">
 <link rel="alternate" hreflang="en" href="https://ivanajdu.github.io/projects/board_selection/">
 <link rel="alternate" hreflang="fr-FR" href="https://ivanajdu.github.io/fr/projects/board_selection/">
 <link rel="alternate" hreflang="x-default" href="https://ivanajdu.github.io/projects/board_selection/">
@@ -14,12 +15,12 @@
 <link href="/css/styles.css" rel="stylesheet">
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="Board Selection — Unity project">
-<meta property="og:description" content="Experimental app measuring the impact of visible attributes on simulated hiring decisions.">
-<meta property="og:url" content="https://ivanajdu.github.io/projects/board_selection/">
+<meta property="og:title" content="Board Selection — projet Unity">
+<meta property="og:description" content="Application expérimentale mesurant l'impact d'attributs visibles sur des décisions de recrutement simulées.">
+<meta property="og:url" content="https://ivanajdu.github.io/fr/projects/board_selection/">
 <meta property="og:image" content="https://ivanajdu.github.io/assets/img/projects/board_selection/1.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta property="og:locale" content="en_EN">
+<meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Ivan Ajdukovic">
 
 <script type="application/ld+json">
@@ -29,19 +30,19 @@
     {
       "@type":"SoftwareApplication",
       "name":"Board Selection",
-      "url":"https://ivanajdu.github.io/projects/board_selection/",
-      "inLanguage":"en",
+      "url":"https://ivanajdu.github.io/fr/projects/board_selection/",
+      "inLanguage":"fr",
       "applicationCategory":"EducationalApplication",
       "operatingSystem":"Any",
       "author":{"@type":"Person","name":"Ivan Ajdukovic","url":"https://ivanajdu.github.io/"},
       "image":"https://ivanajdu.github.io/assets/img/projects/board_selection/1.png",
-      "description":"Experimental application measuring the impact of visible attributes on simulated hiring decisions."
+      "description":"Application expérimentale mesurant l'impact d'attributs visibles sur des décisions de recrutement simulées."
     },
     {
       "@type":"BreadcrumbList",
       "itemListElement":[
-        {"@type":"ListItem","position":1,"name":"Portfolio","item":"https://ivanajdu.github.io/#portfolio"},
-        {"@type":"ListItem","position":2,"name":"Board Selection","item":"https://ivanajdu.github.io/projects/board_selection/"}
+        {"@type":"ListItem","position":1,"name":"Portfolio","item":"https://ivanajdu.github.io/fr/#portfolio"},
+        {"@type":"ListItem","position":2,"name":"Board Selection","item":"https://ivanajdu.github.io/fr/projects/board_selection/"}
       ]
     }
   ]
@@ -50,9 +51,10 @@
 </head>
 
 
+
 <body id="page-top" class="project-page">
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-  <div class="lang-switch"><a href="/fr/projects/board_selection/" lang="fr" title="Français">🇫🇷</a></div>
+  <div class="lang-switch"><a href="/projects/board_selection/" lang="en" title="English">🇬🇧</a></div>
   <div class="navbar-brand">
     <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/assets/img/profile.jpg" alt=""></span>
     <span class="d-block d-lg-none">Ivan Ajdukovic</span>
@@ -60,10 +62,10 @@
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"><span class="navbar-toggler-icon"></span></button>
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav">
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Overview</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tech">Tech</a></li>
-      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#screens">Screenshots</a></li>
-      <li class="nav-item nav-sep">  <a class="nav-link" href="/#portfolio">BACK</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#overview">Présentation</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#tech">Pile technique</a></li>
+      <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#screens">Screenshot</a></li>
+      <li class="nav-item nav-sep"><a class="nav-link" href="/fr/#portfolio">RETOUR</a></li>
     </ul>
   </div>
 </nav>
@@ -72,89 +74,87 @@
   <section class="resume-section" id="overview">
     <div class="resume-section-content">
       <h2 class="mb-2">Board Selection</h2>
-      <p class="text-muted section-lead">Unity • C# • 3D Visualization</p>
+      <p class="text-muted section-lead">Unity • C# • Visualisation 3D</p>
       <div class="row g-4 align-items-start">
         <div class="col-12 col-lg-8">
           <br>
-          <h4 class="mb-2">Overview</h4>
+          <h4 class="mb-2">Présentation</h4>
           <p>
-            <strong>Experimental application built to measure the impact of visible attributes on simulated hiring decisions</strong>.
-            It isolates several factors (gender, height, etc) while logging behavioral indicators such as decision time.
+            <strong>Application expérimentale conçue pour mesurer l’impact d’attributs visibles sur des décisions de recrutement</strong>.
+            Elle isole plusieurs facteurs (genre, taille, etc.) tout en enregistrant des indicateurs comportementaux comme le temps de décision.
           </p>
           <p>
-            The participant moves in a minimalist 3D scene.
-            Thirty avatars are spawned, each showing two numeric indicators (e.g., donation, risk, etc) in a floating panel.
-            These <strong> values come from a modifiable spreadsheet</strong> and can be adapted to any protocol.
+            Le participant se déplace dans une scène 3D minimaliste.
+            Trente avatars sont instanciés, chacun affichant deux indicateurs numériques (par ex. donation, risque, etc.) dans un panneau flottant.
+            Ces <strong>valeurs proviennent d’un tableur modifiable</strong> et peuvent être adaptées à n'importe quel protocole.
           </p>
           <p>
-            The task is to select 10 profiles. A selected avatar waves and can be deselected before validation.
-            <strong>A counter, control hints, and a final confirm button guide the user</strong>. 
-            Each selection stores the elapsed time since trial start.
+            La tâche consiste à sélectionner 10 profils. Un avatar sélectionné salue et peut être désélectionné avant validation.
+            <strong>Un compteur, des rappels de commandes et un bouton de confirmation finale guident l’utilisateur</strong>.
+            Chaque sélection enregistre le temps écoulé depuis le début de l’essai.
           </p>
 
-          <h4 id="details" class="mt-4 mb-2">Details</h4>
+          <h4 id="details" class="mt-4 mb-2">Détails</h4>
           <p>
-            The app controls several visual factors : gender (M/W), style (casual/suit),height (small/average/tall), skin color (black/white). 
-            Interaction is simple and reversible with a quota of 10 selections and explicit validation,
-            with clear feedback via waving and world-space panels.
+            L’application contrôle plusieurs facteurs visuels : genre (H/F), style vestimentaire (casual/suit), taille (petit/moyen/grand), couleur de peau (noir/blanc).
+            L’interaction est simple, réversible, avec un quota de 10 sélections et une validation explicite. Un retour clair est donné au participant via le "salut" des avatars, et l'UI.
           </p>
           <p>
-            <strong>Exported data are Excel-ready</strong>: session DateTime, SelectionTime , Gender, Size,
-            etc, plus Data1 and Data2 coming from a customizable spreadsheet.
-            <strong>Customization</strong> covers the number of avatars, attribute distribution and positions, the two info fields, quotas, stop rules, UI wording, etc.
+            <strong>Les données sont prêtes à être exportées pour Excel</strong> : date/heure de session, temps de sélection, genre, taille, etc., plus Data1 et Data2 issus d’un tableur personnalisable.
+            La <strong>personnalisation</strong> couvre notamment le nombre d’avatars, la distribution et le positionnement des attributs, les deux champs d’information, les quotas, les règles d’arrêt et le libellé de l’UI, etc.
           </p>
         </div>
 
         <aside class="col-12 col-lg-4">
           <div id="tech" class="card shadow-sm">
             <div class="card-body py-3">
-              <h3 class="h6 mb-2">Tech stack</h3>
+              <h3 class="h6 mb-2">Pile technique</h3>
               <ul class="mb-0">
                 <li>Unity 2022 LTS</li>
-                <li>C# </li>
-                <li>Input System (keyboard/mouse)</li>
-                <li>UGUI + TextMeshPro (UI and floating panels)</li>
-                <li>Animator (waving on selection)</li>
-                <li>Raycast targeting</li>
-                <li>Central timer for timestamps</li>
-                <li>Spreadsheet import (CSV/XLSX)</li>
-                <li>CSV UTF-8 export</li>
+                <li>C#</li>
+                <li>Input System (clavier/souris)</li>
+                <li>UGUI + TextMeshPro (UI et panneaux flottants)</li>
+                <li>Animator ("salut" à la sélection)</li>
+                <li>Ciblage par Raycast</li>
+                <li>Chronomètre central pour les horodatages</li>
+                <li>Import tableur (CSV/XLSX)</li>
+                <li>Export CSV UTF-8</li>
               </ul>
             </div>
           </div>
         </aside>
       </div>
 
-      <h2 class="h5 screens-heading">Screenshots</h2>
+      <h2 class="h5 screens-heading">Captures</h2>
       <div class="row g-2 gallery-grid" id="screens">
         <div class="col-6 col-md-4">
           <img class="img-fluid rounded gallery-thumb"
                src="/assets/img/projects/board_selection/1.png"
-               alt="Screenshot 1" loading="lazy" width="1200" height="675"
+               alt="Capture 1" loading="lazy" width="1200" height="675"
                data-gallery-index="0">
         </div>
         <div class="col-6 col-md-4">
           <img class="img-fluid rounded gallery-thumb"
                src="/assets/img/projects/board_selection/2.png"
-               alt="Screenshot 2" loading="lazy" width="1200" height="675"
+               alt="Capture 2" loading="lazy" width="1200" height="675"
                data-gallery-index="1">
         </div>
         <div class="col-6 col-md-4">
           <img class="img-fluid rounded gallery-thumb"
                src="/assets/img/projects/board_selection/3.png"
-               alt="Screenshot 3" loading="lazy" width="1200" height="675"
+               alt="Capture 3" loading="lazy" width="1200" height="675"
                data-gallery-index="2">
         </div>
         <div class="col-6 col-md-4">
           <img class="img-fluid rounded gallery-thumb"
                src="/assets/img/projects/board_selection/4.png"
-               alt="Screenshot 4" loading="lazy" width="1200" height="675"
+               alt="Capture 4" loading="lazy" width="1200" height="675"
                data-gallery-index="3">
         </div>
         <div class="col-6 col-md-4">
           <img class="img-fluid rounded gallery-thumb"
                src="/assets/img/projects/board_selection/5.png"
-               alt="Screenshot 5" loading="lazy" width="1200" height="675"
+               alt="Capture 5" loading="lazy" width="1200" height="675"
                data-gallery-index="4">
         </div>
       </div>
@@ -174,10 +174,10 @@
           <div class="carousel-item"><img src="https://ivanajdu.github.io/assets/img/projects/board_selection/5.png" class="d-block w-100" alt=""></div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Précédent</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+          <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Suivant</span>
         </button>
       </div>
     </div>
