@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ivanajdu.github.io/sitemap1.xml
+Sitemap: https://ivanajdu.github.io/sitemap.xml
